@@ -2,6 +2,11 @@
 
 A web-based Caesar Cipher tool for encrypting and decrypting text using a user-defined shift key. CRYPTEX features a dark cybersecurity-themed interface with a simple and interactive design.
 
+## Live Server Link
+
+Open CRYPTEX – Caesar Cipher Tool
+https://yashtripathi-tech.github.io/CRYPTEX-Caeser-Cipher/
+
 ## Features
 
 - Encrypt plaintext using the Caesar Cipher
