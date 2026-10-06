@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYPTEX | Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-grid"></div>
+    <div class="glow glow-left"></div>
+    <div class="glow glow-right"></div>
+
+    <!-- Decorative holographic lock -->
+    <img class="decor-lock" src="assets/lock.png" alt="" aria-hidden="true">
+
+    <!-- Decorative Caesar statue and cipher rings -->
+    <img class="decor-caesar" src="assets/caesar.png" alt="" aria-hidden="true">
+
+    <header class="topbar">
+        <div class="brand">
+            <div class="brand-logo">
+                <span class="brand-keyhole"></span>
+            </div>
+            <span>CRYPT<span class="cyan">EX</span></span>
+        </div>
+
+        <div class="top-nav">
+            <span>SHIFT</span><b>/</b>
+            <span>ENCRYPT</span><b>/</b>
+            <span>SECURE</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>CAESAR <span>CIPHER</span></h1>
+            <div class="subtitle">E N C R Y P T I O N &nbsp; &amp; &nbsp; D E C R Y P T I O N &nbsp; T O O L</div>
+            <div class="hero-divider"><i></i></div>
+            <p>Same Message. Different Form. <strong>Your Choice.</strong></p>
+        </section>
+
+        <section class="tool">
+
+            <!-- PLAIN TEXT -->
+            <div class="message-card plain-card">
+                <div class="message-heading">
+                    <div class="round-icon red-icon">▣</div>
+                    <div>
+                        <h2>PLAIN TEXT <span>(TO ENCRYPT)</span></h2>
+                        <p>Enter the text you want to encrypt using Caesar Cipher.</p>
+                    </div>
+                </div>
+
+                <textarea id="plainText" maxlength="500" placeholder="Enter your message..."></textarea>
+
+                <div class="counter"><span id="plainCount">0</span>/500</div>
+            </div>
+
+            <!-- ACTIONS -->
+            <div class="actions">
+                <button id="encryptBtn" class="action encrypt">
+                    <span class="button-icon">🔒</span>
+                    <span>ENCRYPT</span>
+                    <strong>→</strong>
+                </button>
+
+                <div class="key-control">
+                    <span class="key-symbol">⚿</span>
+                    <span class="key-label">KEY</span>
+                    <span class="key-divider"></span>
+                    <input id="keyInput" type="number" min="0" max="25" value="3" aria-label="Caesar Cipher key">
+                </div>
+
+                <button id="decryptBtn" class="action decrypt">
+                    <span class="button-icon">🔒</span>
+                    <span>DECRYPT</span>
+                    <strong>→</strong>
+                </button>
+            </div>
+
+            <!-- ENCRYPTED TEXT -->
+            <div class="message-card encrypted-card">
+                <div class="message-heading">
+                    <div class="round-icon blue-icon">▣</div>
+                    <div>
+                        <h2>ENCRYPTED TEXT <span>(TO DECRYPT)</span></h2>
+                        <p>Enter the encrypted text you want to decrypt using the same key.</p>
+                    </div>
+                </div>
+
+                <textarea id="encryptedText" maxlength="500" placeholder="Enter your encrypted message..."></textarea>
+
+                <div class="counter"><span id="encryptedCount">0</span>/500</div>
+            </div>
+
+            <div id="status" class="status">Ready — enter a message and choose your key.</div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-item">
+            <div class="footer-icon">◇</div>
+            <div><b>FAST &amp; RELIABLE</b><small>Instant encryption &amp; decryption</small></div>
+        </div>
+
+        <div class="footer-item">
+            <div class="footer-icon">♙</div>
+            <div><b>SIMPLE TO USE</b><small>Clean. Focused. Powerful.</small></div>
+        </div>
+
+        <div class="footer-item">
+            <div class="footer-icon">&lt;/&gt;</div>
+            <div><b>BUILT BY</b><small class="creator">YASH TRIPATHI</small></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
